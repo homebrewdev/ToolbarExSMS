@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">App bar Демо</string>
+    <string name="Communicate">Социальные сети</string>
+    <string name="Foto">Аккаунт пользователя</string>
+    <string name="Gallery">Галерея фотографий</string>
+    <string name="Info">Демонстрационная программа. \n© HomeBrew Developers (Егор Девятов)</string>
+    <string name="Login_Text">Ввод данных Вашей учетной записи, либо регистрация новой учетной записи:</string>
+    <string name="Logo">HomeBrew Developers</string>
+    <string name="MainText">Демонстрация работы с использованием App Bar \nMaterial Design\n© HomeBrew Developers (Егор Девятов)</string>
+    <string name="Send">Создать ссылку, поделиться с друзьями</string>
+    <string name="Setting1">Настройка намбер 1</string>
+    <string name="Setting2">Настройка намбер 2</string>
+    <string name="Setting3">Настройка нумер 3</string>
+    <string name="Slideshow">Слайдшоу</string>
+    <string name="SocialMedia">Cгенерировать слово</string>
+    <string name="WarningEmptyNumLengthOfWord">Введите число букв от 1 до 10!</string>
+    <string name="about">О программе</string>
+    <string name="aboutText">Тут будет описание программы. \n© HomeBrew Developers\nАвтор - Егор Девятов (2016 г.)</string>
+    <string name="action_favorite">Любимая функция</string>
+    <string name="action_save">Cохранить</string>
+    <string name="action_settings">Настройки</string>
+    <string name="action_sign_in">Войти в учетную запись (зарегистрироваться)</string>
+    <string name="action_sign_in_short">Войти</string>
+    <string name="error_field_required">Данное поле обязательно для заполнения!</string>
+    <string name="company_name">HomeBrew Developers</string>
+    <string name="email_developer">e-mail: stalkercj@gmail.com</string>
+    <string name="error_incorrect_password">Пароль неверен!</string>
+    <string name="error_invalid_email">email адрес введен неверно!</string>
+    <string name="error_invalid_password">Пароль слишком простой и короткий</string>
+    <string name="hashString">Строка хэш-функции:</string>
+    <string name="permission_rationale">\"Для корректного входа в аккаунт приложению необходимо разрешение на доступ к контактам\"</string>
+    <string name="prompt_email">Email</string>
+    <string name="prompt_password">Пароль</string>
+    <string name="serverURLResource">https://www.homebrewdevelopers.com/userfiles</string>
+    <string name="telephone">Call to us: +7-982-996-3655</string>
+    <string name="textURL">Ваша персональная ссылка:</string>
+    <string name="title_activity_login">Вход в учетную запись</string>
+    <string name="titleactivity_login">Вход в учетную запись</string>
+    <string name="toastSave">Сохранение выполнено успешно!</string>
+    <string name="website">Visit our website www.homebrewdevelopers.com</string>
+    <string name="wordButtonGenerateWord">Сгенерировать слово</string>
+    <string name="wordGenerateActivityLabel">Сгенерировать слово</string>
+    <string name="wordNumber">Введите число пар букв в генерируемом слове в диапазоне от 1 до 10:</string>
+    <string name="wordView">Сгенерированное слово:</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="glasniy">аяоеуюёиыэ</string>
+    <string name="soglas">бвгджзйклмнпрстфхцчшщ</string>
+
+    <!-- Строки related to  -->
+</resources>

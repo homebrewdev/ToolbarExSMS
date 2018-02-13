@@ -1,0 +1,61 @@
+<resources>
+    <string name="app_name">App bar Demo</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <!-- Strings related to Main Activity -->
+    <string name="action_settings">Settings</string>
+    <string name="action_save">Save</string>
+    <string name="about">About</string>
+    <string name="action_favorite">Favorite</string>
+    <string name="aboutText">About App \n© HomeBrew Developers\nCode - Egor Devyatov (2016)</string>
+    <string name="MainText">Demo with App Bar и NavDrawer \nMaterial Design\n© HomeBrew Developers (Egor Devyatov)</string>
+    <string name="Info">Demo App. \n© HomeBrew Developers (Egor Devyatov)</string>
+    <string name="toastSave">Save successful!</string>
+    <string name="Foto">User Account</string>
+    <string name="Gallery">Foto Gallery</string>
+    <string name="Slideshow">Slideshow</string>
+    <string name="Communicate">Social Networks</string>
+    <string name="Send">Generate url, share with friends</string>
+    <string name="Logo">HomeBrew Developers</string>
+    <string name="SocialMedia">Generate the syntetic word</string>
+    <string name="email_developer">e-mail: stalkercj@gmail.com</string>
+    <string name="website">Visit our website www.homebrewdevelopers.com</string>
+    <string name="telephone">Call to us: +7-982-996-3655</string>
+    <string name="company_name">HomeBrew Developers</string>
+    <string name="title_activity_login">Enter account</string>
+    <string name="titleactivity_login">Enter account</string>
+    <string name="textURL">Your personal link:</string>
+    <string name="serverURLResource">https://www.homebrewdevelopers.com/userfiles</string>
+    <string name="hashString">Hash string:</string>
+
+    <!-- Strings related to login screen (LoginActivity)-->
+    <string name="Login_Text">Enter account or register new account:</string>
+    <string name="prompt_email">Email</string>
+    <string name="prompt_password">Password</string>
+    <string name="action_sign_in">Enter or (register)</string>
+    <string name="action_sign_in_short">Enter account</string>
+    <string name="error_invalid_email">email is incorrect!</string>
+    <string name="error_invalid_password">Password very easy and short</string>
+    <string name="error_incorrect_password">Password incorrect!</string>
+    <string name="error_field_required">This is mandatory field!</string>
+    <string name="permission_rationale">\"App need your permission to access contacts on your device\"</string>
+
+    <!-- Strings related to ActivitySettings screen (ActivitySettings) -->
+    <string name="Setting1">Setting 1</string>
+    <string name="Setting2">Setting 2</string>
+    <string name="Setting3">Setting 3</string>
+
+    <!-- Strings related to ActivityWord Screen (WordActivity)-->
+    <string name="wordNumber">Enter the number of pairs at 1 to 10 in generated word:</string>
+    <string name="wordView">Generated word:</string>
+    <string name="wordButtonGenerateWord">Generate word</string>
+    <string name="wordGenerateActivityLabel">Generate word</string>
+    <string name="WarningEmptyNumLengthOfWord">Please enter the number at 1 to 10 frame</string>
+    <string name="soglas">qwrtpsdfghklzxcvbnm</string>
+    <string name="glasniy">eyuiao</string>
+
+    <!-- Strings related to  -->
+
+</resources>
