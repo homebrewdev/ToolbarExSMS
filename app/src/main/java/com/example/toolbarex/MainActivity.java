@@ -31,16 +31,11 @@ import java.security.NoSuchAlgorithmException;
 public class MainActivity extends AppCompatActivity
         implements NavigationView.OnNavigationItemSelectedListener {
 
-    /**
-     * ATTENTION: This was auto-generated to implement the App Indexing API.
-     * See https://g.co/AppIndexing/AndroidStudio for more information.
-     */
-
     private GoogleApiClient client;
     private EditText generatedURL;
-    private static final int generatedURLLength = 15; //количество сиволов в генерируемом для пользователя профиле
-    private String serverURL;
-    private String generatedURLString;
+    // generatedURLLength - количество символов в генерируемом для пользователя профиле
+    private static final int generatedURLLength = 15;
+    private String serverURL, generatedURLString;
     public String hashString;
     private TextView textViewHashString;
     private String userLogin;
@@ -74,10 +69,10 @@ public class MainActivity extends AppCompatActivity
         mSettings = getSharedPreferences(APP_PREF_hash, Context.MODE_PRIVATE);
         mSettings_URL = getSharedPreferences(APP_PREF_generatedURL, Context.MODE_PRIVATE);
 
-        //cчитываем из Shared Pref login пользователя и устанавливаем логин в качестве
+        // cчитываем из Shared Pref login пользователя и устанавливаем логин в качестве
         // заголовка главного окна приложения
         mSettings_Login = getSharedPreferences(APP_PREF_Login, Context.MODE_PRIVATE);
-        //и устанавливаем титул заголовок окна приложения в логин пользователя
+        //и устанавливаем титул заголовока окна приложения в логин пользователя
         userLogin = mSettings_Login.getString(APP_PREF_Login, "noname");
         setTitle(userLogin);
 
@@ -98,6 +93,7 @@ public class MainActivity extends AppCompatActivity
         ActionBarDrawerToggle toggle = new ActionBarDrawerToggle(
                 this, drawer, toolbar, R.string.navigation_drawer_open, R.string.navigation_drawer_close);
         drawer.setDrawerListener(toggle);
+        toggle.
         toggle.syncState();
 
         NavigationView navigationView = (NavigationView) findViewById(R.id.nav_view);
@@ -136,17 +132,20 @@ public class MainActivity extends AppCompatActivity
             CallSettingsActivity();
             return true;
         }
+
         //Если нажали на пункт меню "О программе", то вызываем ActivityAbout
         if (id == R.id.about) {
             Intent intent = new Intent(this, ActivityAbout.class);
             startActivity(intent);
             return true;
         }
+
         //Если нажали на разводной ключ, то ушли в ActivitySettings
         if (id == R.id.action_favorite) {
             CallSettingsActivity();
             return true;
         }
+        //Если нажали на Save, то ушли в Save всплывает Toast Save Succesful
         if (id == R.id.action_save) {
             generatedURL.setText(generatedURLString);
             Toast toast = Toast.makeText(getApplicationContext(), R.string.toastSave,
@@ -159,7 +158,7 @@ public class MainActivity extends AppCompatActivity
     }
 
     //Активити ActivitySettings вызывается несколько раз (из разных активити) посему сделал
-    // приват метод дабы каждый раз не прописывать сей код, теряя время
+    // приват метод, дабы каждый раз не прописывать сей код, теряя время
     private void CallSettingsActivity() {
         Intent intentSettings = new Intent(this, ActivitySettings.class);
         startActivity(intentSettings);
@@ -169,20 +168,22 @@ public class MainActivity extends AppCompatActivity
     private String GenerateURL() {
         String dict = "qwertyuiopasdfghjklzxcvbnmQWERTYUIOPASDFGHJKLZXCVBNM1234567890";
         String finalURL = "";
+
         //генерируем случайным перебором строку generatedURL, которая будет содержать
-        // сгенерированные символы, длиной строки = generatedURLLenght
+        // сгенерированные символы, длиной строки = generatedURLLength
         for (int i = 0; i < generatedURLLength; i++) {
             Random rand = new Random();
             int randIndex = rand.nextInt(dict.length());
             char c = dict.charAt(randIndex);
-            finalURL = finalURL + c;
+            finalURL += c;
         }
-        finalURL = serverURL + finalURL;
+
+        finalURL += serverURL;
         generatedURLString = finalURL;
         return finalURL;
     }
 
-    //создаем функцию вычисления хэша для строки
+    //создаем функцию вычисления хэша (md5) для строки in
     private String md5(String in) {
 
         MessageDigest digest;
@@ -213,43 +214,40 @@ public class MainActivity extends AppCompatActivity
         //Прописываем обработчики нажатия на кнопки меню App Bar
         switch (id) {
             case R.id.nav_camera:
-                //Тут прописать действия связанные с нажатием на пункт Фотографии nav_camera
+                // Тут прописаны действия связанные с нажатием на пункт Фотографии nav_camera
                 Intent intent = new Intent(this, LoginActivity.class);
                 startActivity(intent);
                 return true;
 
             case R.id.nav_gallery:
-                //Тут прописать действия связанные с нажатием на пункт Галерея nav_gallery
+                // Тут прописаны действия связанные с нажатием на пункт Галерея nav_gallery
                 Intent intentAbout = new Intent(this, ActivityAbout.class);
                 startActivity(intentAbout);
                 return true;
 
             case R.id.nav_slideshow:
-                //Тут прописать действия связанные с нажатием на пункт Слайдшоу nav_slideshow
+                // Тут прописать действия связанные с нажатием на пункт Слайдшоу nav_slideshow
                 return true;
 
             case R.id.nav_manage:
-                //Тут прописать действия связанные с нажатием на пункт nav_manage
+                // вызываем Settings Activity
                 CallSettingsActivity();
                 return true;
 
             case R.id.nav_share:
-                //Тут прописать действия связанные с нажатием на пункт nav_share
+                // нажатие на пункт nav_share
                 generatedURL.setText(GenerateURL());
-                //вычисляем хэш hashString
+                // вычисляем хэш hashString
                 hashString = md5(generatedURLString);
                 // и выводим хэш-строку в соответствующее поле textViewHashString
                 textViewHashString.setText(hashString);
                 return true;
 
             case R.id.nav_send:
-                //Тут прописать действия связанные с нажатием на пункт nav_send
+                // переход на WordActivity
                 Intent intentGenerateWord = new Intent(this, WordActivity.class);
                 startActivity(intentGenerateWord);
                 return true;
-
-            //default:
-            //  return super.onOptionsItemSelected(item);
         }
 
         DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
@@ -261,8 +259,7 @@ public class MainActivity extends AppCompatActivity
     public void onStart() {
         super.onStart();
 
-        // ATTENTION: This was auto-generated to implement the App Indexing API.
-        // See https://g.co/AppIndexing/AndroidStudio for more information.
+        // App Indexing API.
         client.connect();
         Action viewAction = Action.newAction(
                 Action.TYPE_VIEW, // TODO: choose an action type.
@@ -292,8 +289,7 @@ public class MainActivity extends AppCompatActivity
         editor.putString(APP_PREF_generatedURL, generatedURLString);
         editor.apply();
 
-        // ATTENTION: This was auto-generated to implement the App Indexing API.
-        // See https://g.co/AppIndexing/AndroidStudio for more information.
+        // App Indexing API.
         Action viewAction = Action.newAction(
                 Action.TYPE_VIEW, // TODO: choose an action type.
                 "Main Page", // TODO: Define a title for the content shown.
@@ -308,6 +304,7 @@ public class MainActivity extends AppCompatActivity
         client.disconnect();
     }
 
+    // действия когда приложение перешло в состояние onResume - пауза, свертывание приложения
     @Override
     protected void onPause() {
         super.onPause();
@@ -323,6 +320,7 @@ public class MainActivity extends AppCompatActivity
     }
 
     @Override
+    // действия когда приложение перешло в состояние onResume - вышли из паузы, развертывание приложения
     protected void onResume() {
         super.onResume();
 
