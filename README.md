@@ -1,4 +1,4 @@
 # ToolbarExSMS
 
-My Android education app
+My Android education app.
 This is my studying repository
