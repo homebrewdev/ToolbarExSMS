@@ -35,6 +35,7 @@ public class MainActivity extends AppCompatActivity
      * ATTENTION: This was auto-generated to implement the App Indexing API.
      * See https://g.co/AppIndexing/AndroidStudio for more information.
      */
+
     private GoogleApiClient client;
     private EditText generatedURL;
     private static final int generatedURLLength = 15; //количество сиволов в генерируемом для пользователя профиле
@@ -278,7 +279,8 @@ public class MainActivity extends AppCompatActivity
 
     @Override
     public void onStop() {
-        super.onStop();
+
+        super.onStop(); //выполняем стандартные onStop
 
         // Запоминаем данные о настройке APP+HashString с помощью объекта SharedPreferences
         /*Чтобы внести изменения в настройки, нужно использовать класс SharedPreferences.Editor.

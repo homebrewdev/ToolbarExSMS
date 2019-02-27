@@ -1,22 +1,23 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string name="app_name">App bar Демо</string>
+    <string name="server_url">https://www.homebrewdevelopers.com/userfiles/</string>
     <string name="Communicate">Социальные сети</string>
-    <string name="Foto">Аккаунт пользователя</string>
+    <string name="Foto">Кабинет пользователя</string>
     <string name="Gallery">Галерея фотографий</string>
     <string name="Info">Демонстрационная программа. \n© HomeBrew Developers (Егор Девятов)</string>
-    <string name="Login_Text">Ввод данных Вашей учетной записи, либо регистрация новой учетной записи:</string>
+    <string name="Login_Text">Ввод данных Вашей учетной записи или регистрация новой учетной записи:</string>
     <string name="Logo">HomeBrew Developers</string>
-    <string name="MainText">Демонстрация работы с использованием App Bar \nMaterial Design\n© HomeBrew Developers (Егор Девятов)</string>
+    <string name="MainText">Демонстрация работы с использованием App Bar \nMaterial Design\n© HomeBrew Developers (разработчик: Егор Девятов)</string>
     <string name="Send">Создать ссылку, поделиться с друзьями</string>
     <string name="Setting1">Настройка намбер 1</string>
     <string name="Setting2">Настройка намбер 2</string>
     <string name="Setting3">Настройка нумер 3</string>
     <string name="Slideshow">Слайдшоу</string>
     <string name="SocialMedia">Cгенерировать слово</string>
-    <string name="WarningEmptyNumLengthOfWord">Введите число букв от 1 до 10!</string>
+    <string name="WarningEmptyNumLengthOfWord">Введите число пар букв от 1 до 10!</string>
     <string name="about">О программе</string>
-    <string name="aboutText">Тут будет описание программы. \n© HomeBrew Developers\nАвтор - Егор Девятов (2016 г.)</string>
+    <string name="aboutText">Тут будет описание программы. \n© HomeBrew Developers\nАвтор - Егор Девятов (2018 г.)</string>
     <string name="action_favorite">Любимая функция</string>
     <string name="action_save">Cохранить</string>
     <string name="action_settings">Настройки</string>
@@ -33,7 +34,7 @@
     <string name="prompt_email">Email</string>
     <string name="prompt_password">Пароль</string>
     <string name="serverURLResource">https://www.homebrewdevelopers.com/userfiles</string>
-    <string name="telephone">Call to us: +7-982-996-3655</string>
+    <string name="telephone">Call to us: +7-982-996-xxxx</string>
     <string name="textURL">Ваша персональная ссылка:</string>
     <string name="title_activity_login">Вход в учетную запись</string>
     <string name="titleactivity_login">Вход в учетную запись</string>
@@ -47,6 +48,12 @@
     <string name="navigation_drawer_open">Open navigation drawer</string>
     <string name="glasniy">аяоеуюёиыэ</string>
     <string name="soglas">бвгджзйклмнпрстфхцчшщ</string>
+    <string name="SendSms">Выслать SMS</string>
+    <string name="SMS_Text">SMS сообщение:</string>
+    <string name="SMS_Text_here">Наберите текст SMS сообщения</string>
+    <string name="PhoneNumber">Номер телефона:</string>
+    <string name="SMS_send_Success">SMS успешно отправлено!</string>
+    <string name="SMS_not_Send">SMS не отправлено! ( ..</string>
 
     <!-- Строки related to  -->
 </resources>
