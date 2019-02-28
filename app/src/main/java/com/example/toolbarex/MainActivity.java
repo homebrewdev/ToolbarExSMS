@@ -214,8 +214,8 @@ public class MainActivity extends AppCompatActivity
         switch (id) {
             case R.id.nav_camera:
                 // Тут прописаны действия связанные с нажатием на пункт Фотографии nav_camera
-                Intent intent = new Intent(this, LoginActivity.class);
-                startActivity(intent);
+                Intent intentLoginActivity = new Intent(this, LoginActivity.class);
+                startActivity(intentLoginActivity);
                 return true;
 
             case R.id.nav_gallery:

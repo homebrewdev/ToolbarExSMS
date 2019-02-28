@@ -1,50 +1,55 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:orientation="vertical" android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginStart="16dp"
+    android:layout_marginTop="16dp"
+    android:layout_marginEnd="16dp"
+    android:layout_marginBottom="16dp"
+    android:orientation="vertical">
 
     <TextView
+        android:id="@+id/textView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:layout_gravity="center_horizontal"
         android:text="@string/wordNumber"
-        android:id="@+id/textView"
-        android:layout_gravity="center_horizontal" />
+        android:textAppearance="@style/TextAppearance.AppCompat" />
 
     <EditText
+        android:id="@+id/editTextword"
         android:layout_width="60dp"
         android:layout_height="wrap_content"
-        android:inputType="numberDecimal"
+        android:layout_gravity="center_horizontal"
         android:ems="10"
-        android:id="@+id/editTextword"
-        android:layout_gravity="center_horizontal" />
+        android:inputType="numberDecimal" />
 
     <Button
+        android:id="@+id/btnGenerateWord"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/wordButtonGenerateWord"
-        android:id="@+id/btnGenerateWord"
         android:layout_gravity="center_horizontal"
-        android:onClick="onclick" />
+        android:onClick="onclick"
+        android:text="@string/wordButtonGenerateWord" />
 
     <Space
         android:layout_width="match_parent"
         android:layout_height="40dp" />
 
     <TextView
+        android:id="@+id/textViewWord"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:layout_gravity="center_horizontal"
         android:text="@string/wordView"
-        android:id="@+id/textViewWord"
-        android:layout_gravity="center_horizontal" />
+        android:textAppearance="@style/TextAppearance.AppCompat" />
 
     <TextView
+        android:id="@+id/textGenerateWordView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:textAppearance="?android:attr/textAppearanceSmall"
-        android:id="@+id/textGenerateWordView"
         android:layout_gravity="center_horizontal"
-        android:textSize="60dp" />
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:textSize="36sp" />
 
 </LinearLayout>

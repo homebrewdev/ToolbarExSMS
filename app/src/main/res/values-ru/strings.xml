@@ -4,7 +4,7 @@
     <string name="server_url">https://www.homebrewdevelopers.com/userfiles/</string>
     <string name="Communicate">Социальные сети</string>
     <string name="Foto">Кабинет пользователя</string>
-    <string name="Gallery">Галерея фотографий</string>
+    <string name="Gallery">О программе</string>
     <string name="Info">Демонстрационная программа. \n© HomeBrew Developers (Егор Девятов)</string>
     <string name="Login_Text">Ввод данных Вашей учетной записи или регистрация новой учетной записи:</string>
     <string name="Logo">HomeBrew Developers</string>

@@ -13,17 +13,18 @@
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
         android:supportsRtl="true"
-        android:theme="@style/AppTheme">
+        android:theme="@style/AppTheme.NoActionBar">
         <activity
             android:name=".MainActivity"
             android:label="@string/app_name"
-            android:theme="@style/AppTheme.NoActionBar">
+            android:theme="@style/AppTheme">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <!-- About Activity -->
         <activity
             android:name=".ActivityAbout"
             android:label="@string/about"
@@ -35,13 +36,14 @@
         <!-- Login Activity -->
         <activity
             android:name=".LoginActivity"
-            android:label="@string/titleactivity_login"
-            android:parentActivityName=".MainActivity">
-            <meta-data
-                android:name="android.support.PARENT_ACTIVITY"
-                android:value="com.example.toolbarex.MainActivity" />
-        </activity>
-        <!-- Settings Activity -->
+            android:label="@string/title_activity_login"
+            android:theme="@style/AppTheme.NoActionBar">
+        <!-- android:parentActivityName=".MainActivity" -->
+    <meta-data
+        android:name="android.support.PARENT_ACTIVITY"
+        android:value="com.example.toolbarex.MainActivity" />
+</activity>
+<!-- Settings Activity -->
         <activity
             android:name=".ActivitySettings"
             android:label="@string/action_settings">

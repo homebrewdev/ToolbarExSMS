@@ -15,7 +15,6 @@
     <string name="Info">Demo App. \n© HomeBrew Developers (Egor Devyatov)</string>
     <string name="toastSave">Save successful!</string>
     <string name="Foto">User Account</string>
-    <string name="Gallery">Foto Gallery</string>
     <string name="Slideshow">Send SMS</string>
     <string name="Communicate">Social Networks</string>
     <string name="Send">Generate url, share with friends</string>
@@ -63,6 +62,7 @@
     <string name="glasniy">eyuiao</string>
     <string name="SMS_not_Send">Your sms has failed ( ...</string>
     <string name="SMS_send_Success">SMS has send succesfully!</string>
+    <string name="Gallery">About</string>
 
     <!-- Strings related to  -->
 

@@ -11,9 +11,6 @@ import java.lang.String;
 import java.io.IOException;
 import java.util.Random;
 
-/**
- * Created by Riff on 09.06.2016.
- */
 public class WordActivity extends AppCompatActivity {
 
     private EditText generatedWordLength; //поле для ввода числа букв в генерируемом слове
