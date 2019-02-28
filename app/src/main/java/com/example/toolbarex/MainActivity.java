@@ -225,7 +225,9 @@ public class MainActivity extends AppCompatActivity
                 return true;
 
             case R.id.nav_slideshow:
-                // Тут прописать действия связанные с нажатием на пункт Слайдшоу nav_slideshow
+                // Тут прописать действия связанные с нажатием на пункт Send SMS
+                Intent intentSendSMS = new Intent(this, SMSActivity.class);
+                startActivity(intentSendSMS);
                 return true;
 
             case R.id.nav_manage:

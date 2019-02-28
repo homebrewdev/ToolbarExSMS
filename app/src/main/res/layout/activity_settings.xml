@@ -38,40 +38,6 @@
                 android:text="@string/Setting3"
                 android:id="@+id/switch3" />
 
-            <TextView
-                android:id="@+id/textView8"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="@string/PhoneNumber" />
-
-            <EditText
-                android:id="@+id/editPhoneText"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:ems="10"
-                android:hint="@string/PhoneNumber"
-                android:inputType="textPersonName" />
-
-            <TextView
-                android:id="@+id/textView7"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                tools:text="@string/SMS_Text" />
-
-            <EditText
-                android:id="@+id/editSMSText"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:ems="10"
-                android:hint="@string/SMS_Text_here"
-                android:inputType="textPersonName" />
-
-            <Button
-                android:id="@+id/buttonSendSms"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:onClick="onclick"
-                android:text="@string/SendSms" />
         </LinearLayout>
 
     </LinearLayout>

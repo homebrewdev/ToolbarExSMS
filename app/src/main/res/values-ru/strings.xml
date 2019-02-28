@@ -13,7 +13,7 @@
     <string name="Setting1">Настройка намбер 1</string>
     <string name="Setting2">Настройка намбер 2</string>
     <string name="Setting3">Настройка нумер 3</string>
-    <string name="Slideshow">Слайдшоу</string>
+    <string name="Slideshow">Послать SMS</string>
     <string name="SocialMedia">Cгенерировать слово</string>
     <string name="WarningEmptyNumLengthOfWord">Введите число пар букв от 1 до 10!</string>
     <string name="about">О программе</string>
@@ -48,7 +48,7 @@
     <string name="navigation_drawer_open">Open navigation drawer</string>
     <string name="glasniy">аяоеуюёиыэ</string>
     <string name="soglas">бвгджзйклмнпрстфхцчшщ</string>
-    <string name="SendSms">Выслать SMS</string>
+    <string name="SendSms">Послать SMS</string>
     <string name="SMS_Text">SMS сообщение:</string>
     <string name="SMS_Text_here">Наберите текст SMS сообщения</string>
     <string name="PhoneNumber">Номер телефона:</string>
