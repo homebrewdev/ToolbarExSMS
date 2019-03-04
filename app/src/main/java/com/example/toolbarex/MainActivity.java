@@ -174,10 +174,10 @@ public class MainActivity extends AppCompatActivity
             Random rand = new Random();
             int randIndex = rand.nextInt(dict.length());
             char c = dict.charAt(randIndex);
-            finalURL += c;
+            finalURL = finalURL + c;
         }
 
-        finalURL += serverURL;
+        finalURL = serverURL + finalURL;
         generatedURLString = finalURL;
         return finalURL;
     }
