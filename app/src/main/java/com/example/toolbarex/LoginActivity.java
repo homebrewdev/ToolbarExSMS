@@ -33,12 +33,9 @@ import android.widget.TextView;
 
 import java.util.ArrayList;
 import java.util.List;
-
 import static android.Manifest.permission.READ_CONTACTS;
 
-/* login screen
- * A login screen that offers login via email/password.
- */
+
 public class LoginActivity extends AppCompatActivity implements LoaderCallbacks<Cursor> {
 
     /**
@@ -46,10 +43,6 @@ public class LoginActivity extends AppCompatActivity implements LoaderCallbacks<
      */
     private static final int REQUEST_READ_CONTACTS = 0;
 
-    /**
-     * A dummy authentication store containing known user names and passwords.
-     * TODO: remove after connecting to a real authentication system.
-     */
     private static final String[] DUMMY_CREDENTIALS = new String[]{
             "foo@example.com:hello", "bar@example.com:world"
     };
@@ -112,11 +105,7 @@ public class LoginActivity extends AppCompatActivity implements LoaderCallbacks<
     }
 
     private boolean mayRequestContacts() {
-        /*
-        if (Build.VERSION.SDK_INT < Build.VERSION_CODES.M) {
-            return true;
-        }
-        */
+
         if (checkSelfPermission(READ_CONTACTS) == PackageManager.PERMISSION_GRANTED) {
             return true;
         }
@@ -148,11 +137,11 @@ public class LoginActivity extends AppCompatActivity implements LoaderCallbacks<
         }
     }
 
-    /**
-     * Set up the {@link android.app.ActionBar}, if the API is available.
-    */
+
+    //Set up the {@link android.app.ActionBar}, if the API is available.
+
     @TargetApi(Build.VERSION_CODES.HONEYCOMB)
-    private void setupActionBar() {
+    private void setupActionBar() throws NullPointerException {
         if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.HONEYCOMB) {
             // Show the Up button in the action bar.
             getSupportActionBar().setDisplayHomeAsUpEnabled(true);
@@ -315,6 +304,7 @@ public class LoginActivity extends AppCompatActivity implements LoaderCallbacks<
     /**
      * Represents an asynchronous login/registration task used to authenticate
      * the user.
+     * асинхронный вход/регистрация пользователя
      */
     public class UserLoginTask extends AsyncTask<Void, Void, Boolean> {
 
@@ -331,7 +321,7 @@ public class LoginActivity extends AppCompatActivity implements LoaderCallbacks<
             // TODO: attempt authentication against a network service.
 
             try {
-                // Simulate network access.
+                // Simulate network access. Симулируем загрузку по сети (задержка) на 2000 миллисекунд
                 Thread.sleep(2000);
             } catch (InterruptedException e) {
                 return false;

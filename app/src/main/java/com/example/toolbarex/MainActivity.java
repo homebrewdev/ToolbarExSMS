@@ -61,9 +61,9 @@ public class MainActivity extends AppCompatActivity
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
 
-        //основные предустановки:
-        //generatedURLLength = 15; //количество сиволов в генерируемом для пользователя профиле
-        serverURL = "https://www.homebrewdevelopers.com/userfiles/"; //url сервера нашего приложения
+        // url сервера нашего приложения - основной путь по которому генерируется персональная ссылка
+        // для пользователя (ссылка выдуманная - никакого сервера по такому адресу пока нет)
+        serverURL = "https://www.homebrewdevelopers.com/userfiles/";
 
         //инициализируем переменную mSettings для хранения настроек в Settings Activity
         mSettings = getSharedPreferences(APP_PREF_hash, Context.MODE_PRIVATE);
@@ -97,8 +97,7 @@ public class MainActivity extends AppCompatActivity
 
         NavigationView navigationView = (NavigationView) findViewById(R.id.nav_view);
         navigationView.setNavigationItemSelectedListener(this);
-        // ATTENTION: This was auto-generated to implement the App Indexing API.
-        // See https://g.co/AppIndexing/AndroidStudio for more information.
+
         client = new GoogleApiClient.Builder(this).addApi(AppIndex.API).build();
     }
 
@@ -115,15 +114,14 @@ public class MainActivity extends AppCompatActivity
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
         // Inflate the menu; this adds items to the action bar if it is present.
+        // Заполняем меню и добавляются элементы меню
         getMenuInflater().inflate(R.menu.main, menu);
         return true;
     }
 
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
-        // Handle action bar item clicks here. The action bar will
-        // automatically handle clicks on the Home/Up button, so long
-        // as you specify a parent activity in AndroidManifest.xml.
+
         int id = item.getItemId();
 
         //Если нажали на пункт меню "Настройки", то вызываем ActivitySettings
@@ -144,7 +142,7 @@ public class MainActivity extends AppCompatActivity
             CallSettingsActivity();
             return true;
         }
-        //Если нажали на Save, то ушли в Save всплывает Toast Save Succesful
+        //Если нажали на Save, то ушли в Save всплывает Toast Save Successful
         if (id == R.id.action_save) {
             generatedURL.setText(generatedURLString);
             Toast toast = Toast.makeText(getApplicationContext(), R.string.toastSave,
@@ -182,7 +180,7 @@ public class MainActivity extends AppCompatActivity
         return finalURL;
     }
 
-    //создаем функцию вычисления хэша (md5) для строки in
+    //создаем функцию вычисления хэша (md5) для строки generatedURL
     private String md5(String in) {
 
         MessageDigest digest;
@@ -207,7 +205,7 @@ public class MainActivity extends AppCompatActivity
     @SuppressWarnings("StatementWithEmptyBody")
     @Override
     public boolean onNavigationItemSelected(MenuItem item) {
-        // Handle navigation view item clicks here.
+
         int id = item.getItemId();
 
         //Прописываем обработчики нажатия на кнопки меню App Bar

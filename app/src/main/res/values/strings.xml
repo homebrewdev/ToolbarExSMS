@@ -1,4 +1,4 @@
-<resources>
+<resources xmlns:www="http://schemas.android.com/apk/res-auto">
     <string name="app_name">App bar Demo</string>
     <string name="server_url">https://www.homebrewdevelopers.com/userfiles/</string>
 
@@ -64,6 +64,9 @@
     <string name="SMS_send_Success">SMS has send succesfully!</string>
     <string name="Gallery">About</string>
 
-    <!-- Strings related to  -->
+    <!-- Strings related to About Activity-->
+    <string name="HomeWebSite">Visit our home website \n <a href="http://80.211.30.177/landing/">http://80.211.30.177/landing/</a></string>
+
+    <!-- Strings related to -->
 
 </resources>
