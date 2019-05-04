@@ -53,7 +53,7 @@
     <string name="SMS_Text_here">Наберите текст SMS сообщения</string>
     <string name="PhoneNumber">Номер телефона:</string>
     <string name="SMS_send_Success">SMS успешно отправлено!</string>
-    <string name="SMS_not_Send">SMS не отправлено! ( ..</string>
+    <string name="SMS_not_Send">SMS не отправлено!</string>
     <string name="HomeWebSite">Посетите наш сайт \n  <a href="http://80.211.30.177/landing/">http://80.211.30.177/landing/</a></string>
 
     <!-- Строки related to  -->

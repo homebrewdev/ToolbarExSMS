@@ -60,7 +60,7 @@
     <string name="WarningEmptyNumLengthOfWord">Please enter the number at 1 to 10 frame</string>
     <string name="soglas">qwrtpsdfghklzxcvbnm</string>
     <string name="glasniy">eyuiao</string>
-    <string name="SMS_not_Send">Your sms has failed ( ...</string>
+    <string name="SMS_not_Send">Your sms send has failed!</string>
     <string name="SMS_send_Success">SMS has send succesfully!</string>
     <string name="Gallery">About</string>
 
